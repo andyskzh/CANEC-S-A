@@ -1,359 +1,690 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios - CANEC S.A.</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="img/Mesa de trabajo 14.png" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo invertido.png" alt="Logo" style="height: 40px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="sucursales.html">Sucursales</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#directivos">Directivos</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contáctenos</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#boletines">Boletines</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
-                <li class="nav-item"><a class="btn btn-custom" href="register.html">Registrarse</a></li>
-                <li class="nav-item dropdown d-none" id="user-profile">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img id="user-avatar" src="img/default-avatar.png" alt="User Avatar" style="height: 40px; border-radius: 50%;">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Configuraciones</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
-                  </div>
-              </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo invertido.png" alt="Logo" style="height: 40px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#directivos">Directivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contáctenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#boletines">Boletines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-custom" href="register.html">Registrarse</a>
+          </li>
+          <li class="nav-item dropdown d-none" id="user-profile">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                id="user-avatar"
+                src="img/default-avatar.png"
+                alt="User Avatar"
+                style="height: 40px; border-radius: 50%"
+              />
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="settings.html"
+                ><i class="fas fa-cog"></i> Configuraciones</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" id="logout"
+                ><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container mt-5">
-        <h1 class="text-center">Nuestros Servicios</h1>
-        <div class="row">
-            <!-- Auditoría -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow" data-toggle="modal" data-target="#auditoriaModal">
-                    <img src="img/auditoria.svg" alt="Auditoría" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Auditoría</h5>
-                        <p class="card-text">Examen y evaluación de documentos, auditoría financiera y de cumplimiento.</p>
-                    </div>
-                </div>
+      <h1 class="text-center">Nuestros Servicios</h1>
+      <div class="row">
+        <!-- Auditoría -->
+        <div class="col-md-4">
+          <div
+            class="card mb-4 shadow"
+            data-toggle="modal"
+            data-target="#auditoriaModal"
+          >
+            <img src="img/auditoria.svg" alt="Auditoría" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Auditoría</h5>
+              <p class="card-text">
+                Examen y evaluación de documentos, auditoría financiera y de
+                cumplimiento.
+              </p>
             </div>
-            <!-- Consultoría -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow" data-toggle="modal" data-target="#consultoriaModal">
-                    <img src="img/consultoria.svg" alt="Consultoría" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Consultoría</h5>
-                        <p class="card-text">Diagnóstico organizacional, planificación estratégica y gestión del cambio.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Servicios Internacionales -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow" data-toggle="modal" data-target="#serviciosInternacionalesModal">
-                    <img src="img/servicios.svg" alt="Servicios Internacionales" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Servicios Internacionales</h5>
-                        <p class="card-text">Asesoramiento fiscal internacional, auditoría financiera internacional y consultoría de inversiones.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Consultoría -->
+        <div class="col-md-4">
+          <div
+            class="card mb-4 shadow"
+            data-toggle="modal"
+            data-target="#consultoriaModal"
+          >
+            <img
+              src="img/consultoria.svg"
+              alt="Consultoría"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Consultoría</h5>
+              <p class="card-text">
+                Diagnóstico organizacional, planificación estratégica y gestión
+                del cambio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Servicios Internacionales -->
+        <div class="col-md-4">
+          <div
+            class="card mb-4 shadow"
+            data-toggle="modal"
+            data-target="#serviciosInternacionalesModal"
+          >
+            <img
+              src="img/servicios.svg"
+              alt="Servicios Internacionales"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Servicios Internacionales</h5>
+              <p class="card-text">
+                Asesoramiento fiscal internacional, auditoría financiera
+                internacional y consultoría de inversiones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal Auditoría -->
-    <div class="modal fade" id="auditoriaModal" tabindex="-1" aria-labelledby="auditoriaModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="auditoriaModalLabel">Auditoría</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/auditoria.svg" alt="Auditoría" class="img-fluid mb-3">
-                    <ul>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Examen y Evaluación de Documentos" data-description="Ofrecemos una revisión meticulosa y evaluación de documentos financieros, legales y de negocios para garantizar su precisión, autenticidad y cumplimiento con las normativas aplicables. Este servicio es esencial para identificar riesgos potenciales, validar la viabilidad financiera de proyectos y asegurar la toma de decisiones informada y segura. Acompañamos a nuestros clientes en cada paso, proporcionando claridad y confianza en todas sus operaciones comerciales.">Examen y Evaluación de Documentos</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Auditoría Financiera" data-description="Brindamos servicios de auditoría financiera integrales, diseñados para evaluar la precisión y la integridad de la información contable de su empresa. Nuestro enfoque está orientado a asegurar la conformidad con los estándares contables y las regulaciones financieras vigentes. A través de un examen detallado y una evaluación crítica, identificamos áreas de mejora y potenciales riesgos financieros, proporcionando recomendaciones claras para fortalecer la salud financiera de su organización.">Auditoría Financiera</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Auditoría de Cumplimiento" data-description="Nuestro servicio de auditoría de cumplimiento se centra en asegurar que su empresa opere en consonancia con las leyes, regulaciones y normativas aplicables. Realizamos un examen exhaustivo para detectar cualquier desviación o incumplimiento que pueda representar un riesgo legal o financiero. Proporcionamos análisis detallados y recomendaciones prácticas para garantizar que todas las operaciones se ajusten a los requisitos legales y éticos, ayudando a prevenir sanciones y mejorar la reputación corporativa.">Auditoría de Cumplimiento</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="auditoriaModal"
+      tabindex="-1"
+      aria-labelledby="auditoriaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="auditoriaModalLabel">Auditoría</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/auditoria.svg"
+              alt="Auditoría"
+              class="img-fluid mb-3"
+            />
+            <ul>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Examen y Evaluación de Documentos"
+                data-description="Ofrecemos una revisión meticulosa y evaluación de documentos financieros, legales y de negocios para garantizar su precisión, autenticidad y cumplimiento con las normativas aplicables. Este servicio es esencial para identificar riesgos potenciales, validar la viabilidad financiera de proyectos y asegurar la toma de decisiones informada y segura. Acompañamos a nuestros clientes en cada paso, proporcionando claridad y confianza en todas sus operaciones comerciales."
+              >
+                Examen y Evaluación de Documentos
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Auditoría Financiera"
+                data-description="Brindamos servicios de auditoría financiera integrales, diseñados para evaluar la precisión y la integridad de la información contable de su empresa. Nuestro enfoque está orientado a asegurar la conformidad con los estándares contables y las regulaciones financieras vigentes. A través de un examen detallado y una evaluación crítica, identificamos áreas de mejora y potenciales riesgos financieros, proporcionando recomendaciones claras para fortalecer la salud financiera de su organización."
+              >
+                Auditoría Financiera
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Auditoría de Cumplimiento"
+                data-description="Nuestro servicio de auditoría de cumplimiento se centra en asegurar que su empresa opere en consonancia con las leyes, regulaciones y normativas aplicables. Realizamos un examen exhaustivo para detectar cualquier desviación o incumplimiento que pueda representar un riesgo legal o financiero. Proporcionamos análisis detallados y recomendaciones prácticas para garantizar que todas las operaciones se ajusten a los requisitos legales y éticos, ayudando a prevenir sanciones y mejorar la reputación corporativa."
+              >
+                Auditoría de Cumplimiento
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal Consultoría -->
-    <div class="modal fade" id="consultoriaModal" tabindex="-1" aria-labelledby="consultoriaModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="consultoriaModalLabel">Consultoría</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/consultoria.svg" alt="Consultoría" class="img-fluid mb-3">
-                    <ul>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Organización General" data-description="Ofrecemos servicios especializados en la optimización de la estructura organizacional y los procesos internos de su empresa. Nuestro enfoque se basa en la implementación de prácticas de gestión eficientes que promueven la claridad operacional y mejoran la productividad. Analizamos la alineación entre sus objetivos estratégicos y la configuración de su organización para asegurar que cada elemento contribuya efectivamente al éxito global. A través de una planificación detallada y asesoramiento experto, facilitamos la creación de un ambiente de trabajo cohesivo y eficaz.">Organización General</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Organización de la Producción de Bienes y Servicios" data-description="Nuestro servicio se enfoca en optimizar la planificación y ejecución de la producción de bienes y servicios de su empresa. A través de análisis detallados y estrategias personalizadas, ayudamos a maximizar la eficiencia y calidad en cada etapa del proceso productivo. Desde la gestión de la cadena de suministro hasta el control de calidad y la logística, implementamos soluciones innovadoras que garantizan una entrega oportuna y satisfacción del cliente, manteniendo al mismo tiempo la rentabilidad y competitividad en el mercado.">Organización de la Producción de Bienes y Servicios</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Gestión del Capital Humano" data-description="Nos especializamos en el desarrollo y fortalecimiento del capital humano de su empresa, entendiendo que los empleados son el recurso más valioso. Ofrecemos soluciones integrales que abarcan desde la selección y contratación de talento hasta programas de desarrollo y retención. Nuestro enfoque se centra en alinear las capacidades y aspiraciones del personal con los objetivos estratégicos de la empresa, fomentando un ambiente laboral motivador y productivo. Mediante estrategias efectivas de gestión de recursos humanos, potenciamos la innovación y el compromiso en su equipo, asegurando un rendimiento óptimo y sostenible.">Gestión del Capital Humano</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Planificación" data-description="Ofrecemos servicios de planificación estratégica diseñados para alinear sus recursos y operaciones con sus metas a largo plazo. Nuestro enfoque se basa en una comprensión profunda de su negocio y el entorno en el que opera, lo que nos permite identificar oportunidades y mitigar riesgos potenciales. Trabajamos junto a usted para desarrollar planes efectivos que abarquen desde la gestión financiera hasta la expansión de mercado, asegurando que cada decisión contribuya al crecimiento sostenible y la competitividad de su empresa.">Planificación</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Contratación Económica" data-description="Brindamos asesoría experta en el diseño y negociación de contratos económicos para asegurar transacciones comerciales eficientes y beneficiosas. Nuestro servicio se centra en la elaboración de acuerdos que protejan los intereses de su empresa, minimizando riesgos y maximizando oportunidades. Nos involucramos en cada etapa del proceso de contratación, desde la evaluación preliminar hasta la firma final, garantizando que los términos reflejen claramente las expectativas y obligaciones de todas las partes involucradas.">Contratación Económica</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Contable Financiera" data-description="Ofrecemos servicios completos de contabilidad financiera que garantizan la precisión y transparencia de sus registros financieros. Nos encargamos de la preparación y análisis de estados financieros, asegurando que reflejen fielmente la situación económica y financiera de su empresa. Este servicio es fundamental para la toma de decisiones informadas, la planificación estratégica y el cumplimiento de las normativas fiscales y contables. Nuestro enfoque personalizado y metódico ayuda a mejorar la gestión financiera y a potenciar la salud económica de su organización.">Contable Financiera</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Control Interno" data-description="Ofrecemos servicios de implementación y mejora de sistemas de control interno, diseñados para fortalecer la integridad operacional y financiera de su empresa. Nos centramos en establecer mecanismos efectivos que aseguren el cumplimiento de políticas y procedimientos, la protección de activos, y la fiabilidad de la información financiera. A través de auditorías internas y evaluaciones de riesgo, identificamos y mitigamos vulnerabilidades, promoviendo una cultura de transparencia y responsabilidad que es esencial para el éxito sostenido de su organización.">Control Interno</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Costos y Precios" data-description="Proporcionamos análisis exhaustivos y estrategias efectivas para la gestión de costos y la fijación de precios, asegurando que su empresa maximice su rentabilidad. Nuestro servicio incluye la evaluación detallada de la estructura de costos y el desarrollo de modelos de precios que se alineen con las dinámicas del mercado y las expectativas de los clientes. Trabajamos para optimizar la eficiencia en la producción y los servicios, reduciendo costos innecesarios y estableciendo precios competitivos que atraigan y retengan a sus clientes, sin comprometer la calidad o el margen de beneficio.">Costos y Precios</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Mercadotecnia" data-description="Ofrecemos servicios integrales de mercadotecnia diseñados para aumentar la visibilidad y el alcance de su empresa en el mercado. Nuestro enfoque se centra en comprender profundamente a su público objetivo y diseñar estrategias de marketing que resonen con sus necesidades y preferencias. Implementamos campañas creativas y efectivas que utilizan tanto medios tradicionales como digitales, optimizando la presencia de su marca y fomentando una conexión duradera con los clientes. A través de análisis de mercado detallados y tácticas innovadoras, ayudamos a impulsar las ventas y a fortalecer la posición competitiva de su empresa.">Mercadotecnia</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="consultoriaModal"
+      tabindex="-1"
+      aria-labelledby="consultoriaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="consultoriaModalLabel">Consultoría</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/consultoria.svg"
+              alt="Consultoría"
+              class="img-fluid mb-3"
+            />
+            <ul>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Organización General"
+                data-description="Ofrecemos servicios especializados en la optimización de la estructura organizacional y los procesos internos de su empresa. Nuestro enfoque se basa en la implementación de prácticas de gestión eficientes que promueven la claridad operacional y mejoran la productividad. Analizamos la alineación entre sus objetivos estratégicos y la configuración de su organización para asegurar que cada elemento contribuya efectivamente al éxito global. A través de una planificación detallada y asesoramiento experto, facilitamos la creación de un ambiente de trabajo cohesivo y eficaz."
+              >
+                Organización General
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Organización de la Producción de Bienes y Servicios"
+                data-description="Nuestro servicio se enfoca en optimizar la planificación y ejecución de la producción de bienes y servicios de su empresa. A través de análisis detallados y estrategias personalizadas, ayudamos a maximizar la eficiencia y calidad en cada etapa del proceso productivo. Desde la gestión de la cadena de suministro hasta el control de calidad y la logística, implementamos soluciones innovadoras que garantizan una entrega oportuna y satisfacción del cliente, manteniendo al mismo tiempo la rentabilidad y competitividad en el mercado."
+              >
+                Organización de la Producción de Bienes y Servicios
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Gestión del Capital Humano"
+                data-description="Nos especializamos en el desarrollo y fortalecimiento del capital humano de su empresa, entendiendo que los empleados son el recurso más valioso. Ofrecemos soluciones integrales que abarcan desde la selección y contratación de talento hasta programas de desarrollo y retención. Nuestro enfoque se centra en alinear las capacidades y aspiraciones del personal con los objetivos estratégicos de la empresa, fomentando un ambiente laboral motivador y productivo. Mediante estrategias efectivas de gestión de recursos humanos, potenciamos la innovación y el compromiso en su equipo, asegurando un rendimiento óptimo y sostenible."
+              >
+                Gestión del Capital Humano
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Planificación"
+                data-description="Ofrecemos servicios de planificación estratégica diseñados para alinear sus recursos y operaciones con sus metas a largo plazo. Nuestro enfoque se basa en una comprensión profunda de su negocio y el entorno en el que opera, lo que nos permite identificar oportunidades y mitigar riesgos potenciales. Trabajamos junto a usted para desarrollar planes efectivos que abarquen desde la gestión financiera hasta la expansión de mercado, asegurando que cada decisión contribuya al crecimiento sostenible y la competitividad de su empresa."
+              >
+                Planificación
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Contratación Económica"
+                data-description="Brindamos asesoría experta en el diseño y negociación de contratos económicos para asegurar transacciones comerciales eficientes y beneficiosas. Nuestro servicio se centra en la elaboración de acuerdos que protejan los intereses de su empresa, minimizando riesgos y maximizando oportunidades. Nos involucramos en cada etapa del proceso de contratación, desde la evaluación preliminar hasta la firma final, garantizando que los términos reflejen claramente las expectativas y obligaciones de todas las partes involucradas."
+              >
+                Contratación Económica
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Contable Financiera"
+                data-description="Ofrecemos servicios completos de contabilidad financiera que garantizan la precisión y transparencia de sus registros financieros. Nos encargamos de la preparación y análisis de estados financieros, asegurando que reflejen fielmente la situación económica y financiera de su empresa. Este servicio es fundamental para la toma de decisiones informadas, la planificación estratégica y el cumplimiento de las normativas fiscales y contables. Nuestro enfoque personalizado y metódico ayuda a mejorar la gestión financiera y a potenciar la salud económica de su organización."
+              >
+                Contable Financiera
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Control Interno"
+                data-description="Ofrecemos servicios de implementación y mejora de sistemas de control interno, diseñados para fortalecer la integridad operacional y financiera de su empresa. Nos centramos en establecer mecanismos efectivos que aseguren el cumplimiento de políticas y procedimientos, la protección de activos, y la fiabilidad de la información financiera. A través de auditorías internas y evaluaciones de riesgo, identificamos y mitigamos vulnerabilidades, promoviendo una cultura de transparencia y responsabilidad que es esencial para el éxito sostenido de su organización."
+              >
+                Control Interno
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Costos y Precios"
+                data-description="Proporcionamos análisis exhaustivos y estrategias efectivas para la gestión de costos y la fijación de precios, asegurando que su empresa maximice su rentabilidad. Nuestro servicio incluye la evaluación detallada de la estructura de costos y el desarrollo de modelos de precios que se alineen con las dinámicas del mercado y las expectativas de los clientes. Trabajamos para optimizar la eficiencia en la producción y los servicios, reduciendo costos innecesarios y estableciendo precios competitivos que atraigan y retengan a sus clientes, sin comprometer la calidad o el margen de beneficio."
+              >
+                Costos y Precios
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Mercadotecnia"
+                data-description="Ofrecemos servicios integrales de mercadotecnia diseñados para aumentar la visibilidad y el alcance de su empresa en el mercado. Nuestro enfoque se centra en comprender profundamente a su público objetivo y diseñar estrategias de marketing que resonen con sus necesidades y preferencias. Implementamos campañas creativas y efectivas que utilizan tanto medios tradicionales como digitales, optimizando la presencia de su marca y fomentando una conexión duradera con los clientes. A través de análisis de mercado detallados y tácticas innovadoras, ayudamos a impulsar las ventas y a fortalecer la posición competitiva de su empresa."
+              >
+                Mercadotecnia
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal Servicios Internacionales -->
-    <div class="modal fade" id="serviciosInternacionalesModal" tabindex="-1" aria-labelledby="serviciosInternacionalesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="serviciosInternacionalesModalLabel">Servicios Internacionales</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/servicios.svg" alt="Servicios Internacionales" class="img-fluid mb-3">
-                    <ul>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Servicios de contabilidad, auditoría financiera y teneduría de libros" data-description="Ofrecemos un paquete integral de servicios que cubre todas las necesidades contables y financieras de su empresa. Desde la gestión diaria de la contabilidad y la teneduría de libros, asegurando que todas las transacciones sean registradas con precisión, hasta auditorías financieras profundas que verifican la integridad y precisión de sus estados financieros. Nuestro equipo experto está dedicado a proporcionar soluciones personalizadas que mejoren la transparencia financiera, optimicen la toma de decisiones y aseguren el cumplimiento de las normativas vigentes. Estamos comprometidos con la excelencia y la confiabilidad, ayudando a su empresa a mantener una base financiera sólida y confiable.">Servicios de contabilidad, auditoría financiera y teneduría de libros</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Servicios de asesoramiento tributario" data-description="Nuestro equipo de expertos en fiscalidad ofrece asesoramiento tributario completo para garantizar que su empresa cumpla con todas las obligaciones fiscales mientras maximiza sus beneficios fiscales. Nos especializamos en la planificación tributaria estratégica, la preparación de declaraciones de impuestos y la representación ante autoridades fiscales. A través de un enfoque personalizado, identificamos oportunidades para optimizar su carga tributaria, reducir riesgos y asegurar el cumplimiento de la legislación vigente. Apoyamos a nuestros clientes en la gestión eficaz de sus responsabilidades fiscales, proporcionando claridad y seguridad en un entorno fiscal complejo y cambiante.">Servicios de asesoramiento tributario</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Servicios de consultoría y gestión" data-description="Brindamos consultoría estratégica y servicios de gestión diseñados para transformar y optimizar las operaciones de su empresa. Nuestro enfoque se centra en proporcionar soluciones personalizadas que aborden los desafíos específicos de su negocio y potencien su crecimiento. Desde la implementación de nuevas tecnologías y procesos hasta la reestructuración organizativa y la gestión del cambio, nuestros expertos trabajan de cerca con usted para asegurar que cada aspecto de su empresa funcione con la máxima eficiencia. Nos comprometemos a ayudarle a alcanzar sus objetivos estratégicos y a sostener mejoras duraderas en el rendimiento.">Servicios de consultoría y gestión</li>
-                        <li data-toggle="modal" data-target="#subserviceModal" data-title="Otros servicios profesionales, científicos y técnicos" data-description="Ofrecemos una amplia gama de servicios especializados que abarcan diversas necesidades profesionales, científicas y técnicas. Nuestro equipo está formado por expertos en campos como la investigación de mercado, el desarrollo tecnológico, y la consultoría ambiental, entre otros. Estos servicios están diseñados para proporcionar soluciones innovadoras y basadas en evidencia que apoyen el desarrollo y la competitividad de su empresa. Nos adaptamos a las necesidades específicas de cada cliente, garantizando un enfoque personalizado y resultados que no solo cumplen, sino que superan las expectativas.">Otros servicios profesionales, científicos y técnicos</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-  <!-- Modal para Subservicios -->
-<div class="modal fade" id="subserviceModal" tabindex="-1" aria-labelledby="subserviceModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal fade"
+      id="serviciosInternacionalesModal"
+      tabindex="-1"
+      aria-labelledby="serviciosInternacionalesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subserviceModalLabel">Subservicio</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p id="subserviceDescription"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" id="contractServiceButton">Contratar Servicio</button>
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="serviciosInternacionalesModalLabel">
+              Servicios Internacionales
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/servicios.svg"
+              alt="Servicios Internacionales"
+              class="img-fluid mb-3"
+            />
+            <ul>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Servicios de contabilidad, auditoría financiera y teneduría de libros"
+                data-description="Ofrecemos un paquete integral de servicios que cubre todas las necesidades contables y financieras de su empresa. Desde la gestión diaria de la contabilidad y la teneduría de libros, asegurando que todas las transacciones sean registradas con precisión, hasta auditorías financieras profundas que verifican la integridad y precisión de sus estados financieros. Nuestro equipo experto está dedicado a proporcionar soluciones personalizadas que mejoren la transparencia financiera, optimicen la toma de decisiones y aseguren el cumplimiento de las normativas vigentes. Estamos comprometidos con la excelencia y la confiabilidad, ayudando a su empresa a mantener una base financiera sólida y confiable."
+              >
+                Servicios de contabilidad, auditoría financiera y teneduría de
+                libros
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Servicios de asesoramiento tributario"
+                data-description="Nuestro equipo de expertos en fiscalidad ofrece asesoramiento tributario completo para garantizar que su empresa cumpla con todas las obligaciones fiscales mientras maximiza sus beneficios fiscales. Nos especializamos en la planificación tributaria estratégica, la preparación de declaraciones de impuestos y la representación ante autoridades fiscales. A través de un enfoque personalizado, identificamos oportunidades para optimizar su carga tributaria, reducir riesgos y asegurar el cumplimiento de la legislación vigente. Apoyamos a nuestros clientes en la gestión eficaz de sus responsabilidades fiscales, proporcionando claridad y seguridad en un entorno fiscal complejo y cambiante."
+              >
+                Servicios de asesoramiento tributario
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Servicios de consultoría y gestión"
+                data-description="Brindamos consultoría estratégica y servicios de gestión diseñados para transformar y optimizar las operaciones de su empresa. Nuestro enfoque se centra en proporcionar soluciones personalizadas que aborden los desafíos específicos de su negocio y potencien su crecimiento. Desde la implementación de nuevas tecnologías y procesos hasta la reestructuración organizativa y la gestión del cambio, nuestros expertos trabajan de cerca con usted para asegurar que cada aspecto de su empresa funcione con la máxima eficiencia. Nos comprometemos a ayudarle a alcanzar sus objetivos estratégicos y a sostener mejoras duraderas en el rendimiento."
+              >
+                Servicios de consultoría y gestión
+              </li>
+              <li
+                data-toggle="modal"
+                data-target="#subserviceModal"
+                data-title="Otros servicios profesionales, científicos y técnicos"
+                data-description="Ofrecemos una amplia gama de servicios especializados que abarcan diversas necesidades profesionales, científicas y técnicas. Nuestro equipo está formado por expertos en campos como la investigación de mercado, el desarrollo tecnológico, y la consultoría ambiental, entre otros. Estos servicios están diseñados para proporcionar soluciones innovadoras y basadas en evidencia que apoyen el desarrollo y la competitividad de su empresa. Nos adaptamos a las necesidades específicas de cada cliente, garantizando un enfoque personalizado y resultados que no solo cumplen, sino que superan las expectativas."
+              >
+                Otros servicios profesionales, científicos y técnicos
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Formulario de Solicitud (Inicialmente Oculto) -->
-<div class="modal fade" id="contractFormModal" tabindex="-1" aria-labelledby="contractFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- Modal para Subservicios -->
+    <div
+      class="modal fade"
+      id="subserviceModal"
+      tabindex="-1"
+      aria-labelledby="subserviceModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contractFormModalLabel">Solicitud de Servicio</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="contractForm">
-                    <div class="form-group">
-                        <label for="userName">Nombre</label>
-                        <input type="text" class="form-control" id="userName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userEmail">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="userEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="serviceDetails">Detalles del Servicio</label>
-                        <textarea class="form-control" id="serviceDetails" rows="3" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="preferredDate">Fecha Preferida</label>
-                        <input type="date" class="form-control" id="preferredDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="preferredTime">Hora Preferida</label>
-                        <input type="time" class="form-control" id="preferredTime" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contactPhone">Teléfono de Contacto</label>
-                        <input type="tel" class="form-control" id="contactPhone">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactMethod">Método de Contacto Preferido</label>
-                        <select class="form-control" id="contactMethod" required>
-                            <option value="email">Correo Electrónico</option>
-                            <option value="phone">Teléfono</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="additionalComments">Comentarios Adicionales</label>
-                        <textarea class="form-control" id="additionalComments" rows="3"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="termsConditions" required>
-                        <label class="form-check-label" for="termsConditions">Acepto los Términos y Condiciones</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
-                        <label class="form-check-label" for="privacyPolicy">He leído y acepto la Política de Privacidad</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-3">Enviar Solicitud</button>
-                </form>
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="subserviceModalLabel">Subservicio</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="subserviceDescription"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="contractServiceButton"
+            >
+              Contratar Servicio
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- Formulario de Solicitud (Inicialmente Oculto) -->
+    <div
+      class="modal fade"
+      id="contractFormModal"
+      tabindex="-1"
+      aria-labelledby="contractFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contractFormModalLabel">
+              Solicitud de Servicio
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="contractForm">
+              <div class="form-group">
+                <label for="userName">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="userEmail">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="userEmail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="serviceDetails">Detalles del Servicio</label>
+                <textarea
+                  class="form-control"
+                  id="serviceDetails"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="preferredDate">Fecha Preferida</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="preferredDate"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Hora Preferida</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  id="preferredTime"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Teléfono de Contacto</label>
+                <input type="tel" class="form-control" id="contactPhone" />
+              </div>
+              <div class="form-group">
+                <label for="contactMethod">Método de Contacto Preferido</label>
+                <select class="form-control" id="contactMethod" required>
+                  <option value="email">Correo Electrónico</option>
+                  <option value="phone">Teléfono</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="additionalComments">Comentarios Adicionales</label>
+                <textarea
+                  class="form-control"
+                  id="additionalComments"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="termsConditions"
+                  required
+                />
+                <label class="form-check-label" for="termsConditions"
+                  >Acepto los Términos y Condiciones</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="privacyPolicy"
+                  required
+                />
+                <label class="form-check-label" for="privacyPolicy"
+                  >He leído y acepto la Política de Privacidad</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">
+                Enviar Solicitud
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script>
-    $(document).ready(function() {
-        if (sessionStorage.getItem('isAuthenticated') === 'true') {
-            var avatarUrl = sessionStorage.getItem('userAvatar');
-            $('#user-avatar').attr('src', avatarUrl);
-            $('#user-profile').removeClass('d-none');
-            $('a.nav-link[href="login.html"]').parent().addClass('d-none');
-            $('a.btn-custom[href="register.html"]').parent().addClass('d-none');
+    <script>
+      $(document).ready(function () {
+        if (sessionStorage.getItem("isAuthenticated") === "true") {
+          var avatarUrl = sessionStorage.getItem("userAvatar");
+          $("#user-avatar").attr("src", avatarUrl);
+          $("#user-profile").removeClass("d-none");
+          $('a.nav-link[href="login.html"]').parent().addClass("d-none");
+          $('a.btn-custom[href="register.html"]').parent().addClass("d-none");
         }
 
-        $('#logout').click(function() {
-            sessionStorage.removeItem('isAuthenticated');
-            sessionStorage.removeItem('userName');
-            sessionStorage.removeItem('userEmail');
-            sessionStorage.removeItem('userAvatar');
-            window.location.href = 'index.html';
+        $("#logout").click(function () {
+          sessionStorage.removeItem("isAuthenticated");
+          sessionStorage.removeItem("userName");
+          sessionStorage.removeItem("userEmail");
+          sessionStorage.removeItem("userAvatar");
+          window.location.href = "index.html";
         });
 
         // Manejar clics en los subservicios
-        $('li[data-toggle="modal"]').click(function() {
-            var title = $(this).data('title');
-            var description = $(this).data('description');
-            $('#subserviceModalLabel').text(title);
-            $('#subserviceDescription').text(description);
+        $('li[data-toggle="modal"]').click(function () {
+          var title = $(this).data("title");
+          var description = $(this).data("description");
+          $("#subserviceModalLabel").text(title);
+          $("#subserviceDescription").text(description);
         });
 
         // Manejar clics en el botón de contratar servicio
-        $('#contractServiceButton').click(function() {
-            if (sessionStorage.getItem('isAuthenticated') !== 'true') {
-                window.location.href = 'login.html';
-            } else {
-                // Mostrar formulario de contratación
-                showContractForm();
-            }
+        $("#contractServiceButton").click(function () {
+          if (sessionStorage.getItem("isAuthenticated") !== "true") {
+            window.location.href = "login.html";
+          } else {
+            // Mostrar formulario de contratación
+            showContractForm();
+          }
         });
-    });
+      });
+    </script>
 
- 
-</script>
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        if (sessionStorage.getItem('isAuthenticated') === 'true') {
-            var avatarUrl = sessionStorage.getItem('userAvatar');
-            $('#user-avatar').attr('src', avatarUrl);
-            $('#user-profile').removeClass('d-none');
-            $('a.nav-link[href="login.html"]').parent().addClass('d-none');
-            $('a.btn-custom[href="register.html"]').parent().addClass('d-none');
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        if (sessionStorage.getItem("isAuthenticated") === "true") {
+          var avatarUrl = sessionStorage.getItem("userAvatar");
+          $("#user-avatar").attr("src", avatarUrl);
+          $("#user-profile").removeClass("d-none");
+          $('a.nav-link[href="login.html"]').parent().addClass("d-none");
+          $('a.btn-custom[href="register.html"]').parent().addClass("d-none");
         }
 
-        $('#logout').click(function() {
-            sessionStorage.removeItem('isAuthenticated');
-            sessionStorage.removeItem('userName');
-            sessionStorage.removeItem('userEmail');
-            sessionStorage.removeItem('userAvatar');
-            window.location.href = 'index.html';
+        $("#logout").click(function () {
+          sessionStorage.removeItem("isAuthenticated");
+          sessionStorage.removeItem("userName");
+          sessionStorage.removeItem("userEmail");
+          sessionStorage.removeItem("userAvatar");
+          window.location.href = "index.html";
         });
 
         // Manejar clics en los subservicios
-        $('li[data-toggle="modal"]').click(function() {
-            var title = $(this).data('title');
-            var description = $(this).data('description');
-            $('#subserviceModalLabel').text(title);
-            $('#subserviceDescription').text(description);
+        $('li[data-toggle="modal"]').click(function () {
+          var title = $(this).data("title");
+          var description = $(this).data("description");
+          $("#subserviceModalLabel").text(title);
+          $("#subserviceDescription").text(description);
         });
 
         // Manejar clics en el botón de contratar servicio
-        $('#contractServiceButton').click(function() {
-            if (sessionStorage.getItem('isAuthenticated') !== 'true') {
-                window.location.href = 'login.html';
-            } else {
-                // Mostrar formulario de contratación
-                showContractForm();
-            }
+        $("#contractServiceButton").click(function () {
+          if (sessionStorage.getItem("isAuthenticated") !== "true") {
+            window.location.href = "login.html";
+          } else {
+            // Mostrar formulario de contratación
+            showContractForm();
+          }
         });
-    });
+      });
 
-    function showContractForm() {
+      function showContractForm() {
         // Prellenar campos de nombre y correo electrónico
-        $('#userName').val(sessionStorage.getItem('userName'));
-        $('#userEmail').val(sessionStorage.getItem('userEmail'));
-        
-        // Mostrar el formulario de solicitud
-        $('#contractFormModal').modal('show');
-    }
+        $("#userName").val(sessionStorage.getItem("userName"));
+        $("#userEmail").val(sessionStorage.getItem("userEmail"));
 
-    $('#contractForm').submit(function(event) {
+        // Mostrar el formulario de solicitud
+        $("#contractFormModal").modal("show");
+      }
+
+      $("#contractForm").submit(function (event) {
         event.preventDefault();
         // Aquí puedes agregar la lógica para enviar la solicitud
-        alert('Solicitud enviada con éxito.');
-        $('#contractFormModal').modal('hide');
-    });
-</script>
+        alert("Solicitud enviada con éxito.");
+        $("#contractFormModal").modal("hide");
+      });
+    </script>
 
-<script>
-    $('li[data-toggle="modal"]').click(function() {
-    var title = $(this).data('title');
-    var description = $(this).data('description');
-    $('#subserviceModalLabel').text(title);
-    $('#subserviceDescription').text(description);
+    <script>
+      $('li[data-toggle="modal"]').click(function () {
+        var title = $(this).data("title");
+        var description = $(this).data("description");
+        $("#subserviceModalLabel").text(title);
+        $("#subserviceDescription").text(description);
 
-    // Cerrar el modal de servicios
-    $('.modal').modal('hide');
-});
-
-</script>
-
-</body>
+        // Cerrar el modal de servicios
+        $(".modal").modal("hide");
+      });
+    </script>
+  </body>
 </html>
